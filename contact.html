@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url("https://i.imgur.com/wEDJfYM.jpg") no-repeat center;
+  background-size: cover;
+  height: auto;
+  font-family: 'Roboto';
+}
+
+
+.container{
+  max-width: 800px;
+  height: 600px;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+p{
+  text-align: center;
+  letter-spacing: 1px;  
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #486255;
+}
+
+.input,
+.msg .area{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+.login .input{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+.login .input:last-child{
+  margin-right: 0;
+}
+
+.msg .area{
+  height: 200px;
+}
+
+.btn{
+  width: 250px;
+  background: #486255;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input:focus,
+.msg .area:focus{
+  border: 2px solid #486255;
+}
+
+::-webkit-input-placeholder{
+  font-family: 'roboto';
+}
+button{
+    width: 60px;
+    height:30px;
+    background-color: rgb(22, 102, 102);
+    position: relative;
+    margin-bottom: 5px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ </style>
+    <script>
+        $(".btn").click(function(){
+  $(".input, .area").val("");
+});
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>CONTACT US</p>
+        <button type="button" ><a href="homepage.html">Home</a></button>
+        <div class="login">
+          <input type="text" placeholder="Your Name" class="input">
+          <input type="text" placeholder="Your Email Address" class="input">
+        </div>
+        
+        <div class="subject">
+          <input type="text" placeholder="Subject" class="input">
+        </div>
+        
+        <div class="msg">
+          <textarea  class="area" placeholder="Leave a Message"></textarea>
+        </div>
+        
+        <div class="btn">Send Message</div>
+      </div>
+</body>
+</html>
